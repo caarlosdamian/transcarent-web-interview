@@ -16,7 +16,7 @@ export default function Tree() {
   const deleteAnimal = (animalToDelete) => {
     setAnimales(
       animales.filter((val) => {
-        return val.name !== animalToDelete;
+        return val.id !== animalToDelete;
       })
     );
   };
@@ -30,7 +30,7 @@ export default function Tree() {
           <p className={animal.className}>{animal.name}</p>
           <span
             style={{ cursor: "pointer" }}
-            onClick={() => deleteAnimal(animal.name)}
+            onClick={() => deleteAnimal(animal.id)}
           >
             ❌
           </span>
