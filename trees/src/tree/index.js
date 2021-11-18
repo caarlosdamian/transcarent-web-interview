@@ -20,7 +20,6 @@ export default function Tree() {
       })
     );
   };
-  console.log(animales);
   return (
     <div className="tree">
       {animales?.map((animal, key) => (
